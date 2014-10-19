@@ -14,6 +14,8 @@ namespace WindowsFormsApplication1
             int[] wave_A = new int[3];
             int set1, set2, set3;
 
+            weight = Convert.ToInt16(weight * .90); //calculating max is 90% of true max
+
             set1 = Convert.ToInt16(weight * .75);
             wave_A[0] = set1;
             set2 = Convert.ToInt16(weight * .8);
@@ -29,6 +31,8 @@ namespace WindowsFormsApplication1
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}
             int[] wave_B = new int[3];
             int set1, set2, set3;
+
+            weight = Convert.ToInt16(weight * .90); //calculating max is 90% of true max
 
             set1 = Convert.ToInt16(weight * .8);
             wave_B[0] = set1;
@@ -46,6 +50,8 @@ namespace WindowsFormsApplication1
             int[] wave_C = new int[3];
             int set1, set2, set3;
 
+            weight = Convert.ToInt16(weight * .90); //calculating max is 90% of true max
+
             set1 = Convert.ToInt16(weight * .75);
             wave_C[0] = set1;
             set2 = Convert.ToInt16(weight * .85);
@@ -61,6 +67,8 @@ namespace WindowsFormsApplication1
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}
             int[] wave_D = new int[3];
             int set1, set2, set3;
+
+            weight = Convert.ToInt16(weight * .90); //calculating max is 90% of true max
 
             set1 = Convert.ToInt16(weight * .6);
             wave_D[0] = set1;

@@ -34,18 +34,24 @@ namespace WindowsFormsApplication1
 
         private void calculate_Click(object sender, EventArgs e)
         {
-            //Store user input
-            squat = Convert.ToInt16(squat_input.Text);
-            deadlift = Convert.ToInt16(deadlift_input.Text);
-            bench = Convert.ToInt16(bench_input.Text);
-            overhead = Convert.ToInt16(overhead_input.Text);
+            try {                                                               // try-catch block for format exceptions (blanks, non digits)
+                //Store user input
+                squat = Convert.ToInt16(squat_input.Text);
+                deadlift = Convert.ToInt16(deadlift_input.Text);
+                bench = Convert.ToInt16(bench_input.Text);
+                overhead = Convert.ToInt16(overhead_input.Text);
 
 
-            //Create and call the results form
-            Form2 results = new Form2();
-            results.weights_entered(squat, bench, deadlift, overhead);
-            results.populate_grid();
-            results.Show();
+                //Create and call the results form
+                Form2 results = new Form2();
+                results.weights_entered(squat, bench, deadlift, overhead);
+                results.populate_grid();
+                results.Show();
+            }
+            catch (FormatException fEx)
+            {
+                MessageBox.Show("Please Enter Only Digits (0-9)");
+            }
         }
 
     }
