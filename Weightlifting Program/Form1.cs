@@ -54,6 +54,12 @@ namespace WindowsFormsApplication1
             }
         }
 
+        private void instructClick(object sender, EventArgs e)
+        {
+            instructForm instruct = new instructForm();
+            instruct.Show();
+        }
+
     }
 
 }

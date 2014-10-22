@@ -55,25 +55,25 @@ namespace WindowsFormsApplication1
             weight = calculate.wave_A(squat_rm);
             results_grid[1, 0].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 5 reps\n"+
-                                       "Set 3: " + weight[2] + " lbs x 5 reps";
+                                       "Set 3: " + weight[2] + " lbs x 5 reps+";
 
             //Bench
             weight = calculate.wave_A(bench_rm);
             results_grid[2, 0].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 5 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 5 reps";
+                                       "Set 3: " + weight[2] + " lbs x 5 reps+";
 
             //Deadlift
             weight = calculate.wave_A(deadlift_rm);
             results_grid[3, 0].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 5 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 5 reps";
+                                       "Set 3: " + weight[2] + " lbs x 5 reps+";
 
             //Overhead
             weight = calculate.wave_A(overhead_rm);
             results_grid[4, 0].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 5 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 5 reps";
+                                       "Set 3: " + weight[2] + " lbs x 5 reps+";
         }
 
         private void populate_wave_B()
@@ -85,25 +85,25 @@ namespace WindowsFormsApplication1
             weight = calculate.wave_B(squat_rm);
             results_grid[1, 1].Value = "Set 1: " + weight[0] + " lbs x 3 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 3 reps";
+                                       "Set 3: " + weight[2] + " lbs x 3 reps+";
 
             //Bench
             weight = calculate.wave_B(bench_rm);
             results_grid[2, 1].Value = "Set 1: " + weight[0] + " lbs x 3 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 3 reps";
+                                       "Set 3: " + weight[2] + " lbs x 3 reps+";
 
             //Deadlift
             weight = calculate.wave_B(deadlift_rm);
             results_grid[3, 1].Value = "Set 1: " + weight[0] + " lbs x 3 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 3 reps";
+                                       "Set 3: " + weight[2] + " lbs x 3 reps+";
 
             //Overhead
             weight = calculate.wave_B(overhead_rm);
             results_grid[4, 1].Value = "Set 1: " + weight[0] + " lbs x 3 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 3 reps";
+                                       "Set 3: " + weight[2] + " lbs x 3 reps+";
         }
 
         private void populate_wave_C()
@@ -115,25 +115,25 @@ namespace WindowsFormsApplication1
             weight = calculate.wave_C(squat_rm);
             results_grid[1, 2].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 1 reps";
+                                       "Set 3: " + weight[2] + " lbs x 1 reps+";
 
             //Bench
             weight = calculate.wave_C(bench_rm);
             results_grid[2, 2].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 1 reps";
+                                       "Set 3: " + weight[2] + " lbs x 1 reps+";
 
             //Deadlift
             weight = calculate.wave_C(deadlift_rm);
             results_grid[3, 2].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 1 reps";
+                                       "Set 3: " + weight[2] + " lbs x 1 reps+";
 
             //Overhead
             weight = calculate.wave_C(overhead_rm);
             results_grid[4, 2].Value = "Set 1: " + weight[0] + " lbs x 5 reps\n" +
                                        "Set 2: " + weight[1] + " lbs x 3 reps\n" +
-                                       "Set 3: " + weight[2] + " lbs x 1 reps";
+                                       "Set 3: " + weight[2] + " lbs x 1 reps+";
 
         }
 

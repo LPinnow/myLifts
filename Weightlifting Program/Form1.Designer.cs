@@ -37,6 +37,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.instructions = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // calculate
@@ -121,11 +122,22 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "Overhead Press";
             // 
+            // instructions
+            // 
+            this.instructions.Location = new System.Drawing.Point(140, 307);
+            this.instructions.Name = "instructions";
+            this.instructions.Size = new System.Drawing.Size(75, 23);
+            this.instructions.TabIndex = 9;
+            this.instructions.Text = "Instructions";
+            this.instructions.UseVisualStyleBackColor = true;
+            this.instructions.Click += new System.EventHandler(this.instructClick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(425, 363);
+            this.Controls.Add(this.instructions);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -136,7 +148,7 @@
             this.Controls.Add(this.overhead_input);
             this.Controls.Add(this.calculate);
             this.Name = "Form1";
-            this.Text = "Welcome to myLift!";
+            this.Text = "Welcome to myLifts!";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -153,6 +165,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Button instructions;
     }
 }
 
