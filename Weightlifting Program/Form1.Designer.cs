@@ -44,7 +44,7 @@
             this.calculate.Location = new System.Drawing.Point(240, 308);
             this.calculate.Name = "calculate";
             this.calculate.Size = new System.Drawing.Size(75, 23);
-            this.calculate.TabIndex = 0;
+            this.calculate.TabIndex = 4;
             this.calculate.Text = "Calculate";
             this.calculate.UseVisualStyleBackColor = true;
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
@@ -55,7 +55,7 @@
             this.overhead_input.MaxLength = 4;
             this.overhead_input.Name = "overhead_input";
             this.overhead_input.Size = new System.Drawing.Size(100, 20);
-            this.overhead_input.TabIndex = 1;
+            this.overhead_input.TabIndex = 3;
             this.overhead_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // deadlift_input
@@ -73,7 +73,7 @@
             this.bench_input.MaxLength = 4;
             this.bench_input.Name = "bench_input";
             this.bench_input.Size = new System.Drawing.Size(100, 20);
-            this.bench_input.TabIndex = 3;
+            this.bench_input.TabIndex = 1;
             this.bench_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // squat_input
@@ -82,7 +82,7 @@
             this.squat_input.MaxLength = 4;
             this.squat_input.Name = "squat_input";
             this.squat_input.Size = new System.Drawing.Size(100, 20);
-            this.squat_input.TabIndex = 4;
+            this.squat_input.TabIndex = 0;
             this.squat_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // label1
