@@ -110,7 +110,7 @@
             this.ClientSize = new System.Drawing.Size(618, 484);
             this.Controls.Add(this.results_grid);
             this.Name = "Form2";
-            this.Text = "Form2";
+            this.Text = "Calculated Schedule";
             ((System.ComponentModel.ISupportInitialize)(this.results_grid)).EndInit();
             this.ResumeLayout(false);
 

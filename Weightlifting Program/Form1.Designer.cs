@@ -136,7 +136,7 @@
             this.Controls.Add(this.overhead_input);
             this.Controls.Add(this.calculate);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Welcome to myLift!";
             this.ResumeLayout(false);
             this.PerformLayout();
 
