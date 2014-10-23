@@ -37,7 +37,7 @@ namespace WindowsFormsApplication1
 
         public void populate_grid()
         {
-            //decides whether to chose Option A or B
+            //decides whether to choose accessory exercises Option A or B
             Random rnd = new Random();
             int option = rnd.Next(1);
             int notOption;
