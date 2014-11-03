@@ -108,7 +108,7 @@
             // Day1
             // 
             this.Day1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells;
-            this.Day1.HeaderText = "Main Exercises";
+            this.Day1.HeaderText = "Main Exercise";
             this.Day1.MinimumWidth = 150;
             this.Day1.Name = "Day1";
             this.Day1.Width = 150;
@@ -162,7 +162,7 @@
             // 
             // main
             // 
-            this.main.HeaderText = "Main Exercises";
+            this.main.HeaderText = "Main Exercise";
             this.main.MinimumWidth = 150;
             this.main.Name = "main";
             this.main.Width = 150;
@@ -216,7 +216,7 @@
             // 
             // dataGridViewTextBoxColumn2
             // 
-            this.dataGridViewTextBoxColumn2.HeaderText = "Main Exercises";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Main Exercise";
             this.dataGridViewTextBoxColumn2.MinimumWidth = 150;
             this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
             this.dataGridViewTextBoxColumn2.Width = 150;
@@ -270,7 +270,7 @@
             // 
             // dataGridViewTextBoxColumn5
             // 
-            this.dataGridViewTextBoxColumn5.HeaderText = "Main Exercises";
+            this.dataGridViewTextBoxColumn5.HeaderText = "Main Exercise";
             this.dataGridViewTextBoxColumn5.MinimumWidth = 150;
             this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
             this.dataGridViewTextBoxColumn5.Width = 150;
