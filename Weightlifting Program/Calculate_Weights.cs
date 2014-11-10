@@ -8,6 +8,10 @@ namespace WindowsFormsApplication1
 {
     class calculate
     {
+        /**
+         * Calculation A
+         * (Requirement 2.1.1)
+         */
         public static int[] wave_A(int weight)
         {
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}
@@ -28,6 +32,10 @@ namespace WindowsFormsApplication1
             return wave_A;
         }
 
+        /**
+         * Calculation B
+         * (Requirement 2.1.2)
+         */
         public static int[] wave_B(int weight)
         {
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}
@@ -47,6 +55,10 @@ namespace WindowsFormsApplication1
             return wave_B;
         }
 
+        /**
+         * Calculation C
+         * (Requirement 2.1.3)
+         */
         public static int[] wave_C(int weight)
         {
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}
@@ -66,6 +78,10 @@ namespace WindowsFormsApplication1
             return wave_C;
         }
 
+        /**
+         * Calculation D
+         * (Requirement 2.1.4)
+         */
         public static int[] wave_D(int weight)
         {
             //Array of integers containing weights {set 1 weight, set 2 weight, set 3 weight}

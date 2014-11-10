@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    /**
+     * GUI interface displayed when application is started
+     * (Requirement 1.0.0)
+     */
     public partial class Form1 : Form
     {
         static int squat;
@@ -22,6 +26,10 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
+        /**
+         * Display error message if input is not a number
+         * (Requirement 1.1.3)
+         */
         private void textbox_KeyPress(object sender, KeyPressEventArgs e)
         {
             //Only allow user to enter digits otherwise display message prompt
@@ -32,17 +40,24 @@ namespace WindowsFormsApplication1
             }
         }
 
+        /**
+         * Calculate Button
+         * (Requirement 1.1.0)
+         */
         private void calculate_Click(object sender, EventArgs e)
         {
-            try {                                                               // try-catch block for format exceptions (blanks, non digits)
+            // try-catch block for format exceptions (blanks, non digits)
+            try {                                                               
                 //Store user input
                 squat = Convert.ToInt16(squat_input.Text);
                 deadlift = Convert.ToInt16(deadlift_input.Text);
                 bench = Convert.ToInt16(bench_input.Text);
                 overhead = Convert.ToInt16(overhead_input.Text);
 
-
-                //Create and call the results form
+                /**
+                 * Create and call the results form
+                 * (Requirement 1.1.1)
+                 */
                 Form2 results = new Form2();
                 results.weights_entered(squat, bench, deadlift, overhead);
                 results.populate_grid();
@@ -54,8 +69,13 @@ namespace WindowsFormsApplication1
             }
         }
 
+        /**
+         * Instructions Button
+         * (Requirement 1.3.0)
+         */
         private void instructClick(object sender, EventArgs e)
         {
+            // Seperate instruction form (Requirement 1.3.1)
             instructForm instruct = new instructForm();
             instruct.Show();
         }

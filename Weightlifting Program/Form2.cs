@@ -10,6 +10,10 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    /**
+     * Output is displayed in a separate window when Calculate button is pressed
+     * (Requirement 3.0.0)
+     */
     public partial class Form2 : Form
     {
         static int squat_rm;
@@ -19,6 +23,10 @@ namespace WindowsFormsApplication1
 
         public Form2()
         {
+            /**
+             * Output is displayed in a table
+             * (Requirement 3.1.0)
+             */
             InitializeComponent();
             this.waveA_grid.Rows.Add(3);
             this.waveB_grid.Rows.Add(3);
@@ -37,7 +45,10 @@ namespace WindowsFormsApplication1
 
         public void populate_grid()
         {
-            //decides whether to choose accessory exercises Option A or B
+            /**
+             * Accessory exercises A or B are generated
+             * (Requirement 2.2.0)
+             */
             Random rnd = new Random();
             int option = rnd.Next(1);
             int notOption;
@@ -90,24 +101,24 @@ namespace WindowsFormsApplication1
             {
                 //Option A
                 case 0:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveA_grid[2, 0].Value = "Hack Squat: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //accessory bench
+                    //accessory bench (Requirement 2.2.2)
                     waveA_grid[2, 1].Value = "Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Cable Tricep Extension: 4 sets of 10-20 reps";
-                    //accessory deadlift
+                    //accessory deadlift (Requirement 2.2.3)
                     waveA_grid[2, 2].Value = "Chin Up: 4 sets of 10-12 reps\n" + "Bent Over Dumbbell Row: 4 sets of 15 reps each arm\n" + "Back Raises: 4 sets of 15 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveA_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Barbell Upright Row: 4 sets of 10 reps\n" + "Dumbbell Lateral Raises: 4 sets of 10-15 reps\n" + "Standing Barbell Curl: 4 sets of 10 reps\n";
                     break;
                 //Option B
                 case 1:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveA_grid[2, 0].Value = "Leg Press: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //acessory bench
+                    //acessory bench (Requirement 2.2.2)
                     waveA_grid[2, 1].Value = "Incline Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Lying Barbell Tricep Extensions: 4 sets of 10-20 reps";
-                    //acesssory deadlift
+                    //acesssory deadlift (Requirement 2.2.3)
                     waveA_grid[2, 2].Value = "Lat Pull Down: 4 sets of 10-12 reps\n" + "Bent Over Barbell Row: 4 sets of 10 reps\n" + " Reverse Hyperextensions: 4 sets of 12 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps\n";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveA_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Rope Upright Rows: 4 sets of 10 reps\n" + "Bent Over Dumbbell Reverse Fly: 4 sets of 10-15 reps\n" + "Behind-the-Neck Overhead Press: 4 sets of 10 reps\n";
                     break;
                     
@@ -155,24 +166,24 @@ namespace WindowsFormsApplication1
             {
                 //Option A
                 case 0:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveB_grid[2, 0].Value = "Hack Squat: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //accessory bench
+                    //accessory bench (Requirement 2.2.2)
                     waveB_grid[2, 1].Value = "Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Cable Tricep Extension: 4 sets of 10-20 reps";
-                    //accessory deadlift
+                    //accessory deadlift (Requirement 2.2.3)
                     waveB_grid[2, 2].Value = "Chin Up: 4 sets of 10-12 reps\n" + "Bent Over Dumbbell Row: 4 sets of 15 reps each arm\n" + "Back Raises: 4 sets of 15 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveB_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Barbell Upright Row: 4 sets of 10 reps\n" + "Dumbbell Lateral Raises: 4 sets of 10-15 reps\n" + "Standing Barbell Curl: 4 sets of 10 reps\n";
                     break;
                 //Option B
                 case 1:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveB_grid[2, 0].Value = "Leg Press: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //acessory bench
+                    //acessory bench (Requirement 2.2.2)
                     waveB_grid[2, 1].Value = "Incline Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Lying Barbell Tricep Extensions: 4 sets of 10-20 reps";
-                    //acesssory deadlift
+                    //acesssory deadlift (Requirement 2.2.3)
                     waveB_grid[2, 2].Value = "Lat Pull Down: 4 sets of 10-12 reps\n" + "Bent Over Barbell Row: 4 sets of 10 reps\n" + " Reverse Hyperextensions: 4 sets of 12 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps\n";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveB_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Rope Upright Rows: 4 sets of 10 reps\n" + "Bent Over Dumbbell Reverse Fly: 4 sets of 10-15 reps\n" + "Behind-the-Neck Overhead Press: 4 sets of 10 reps\n";
                     break;
 
@@ -218,24 +229,24 @@ namespace WindowsFormsApplication1
             {
                 //Option A
                 case 0:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveC_grid[2, 0].Value = "Hack Squat: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //accessory bench
+                    //accessory bench (Requirement 2.2.2)
                     waveC_grid[2, 1].Value = "Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Cable Tricep Extension: 4 sets of 10-20 reps";
-                    //accessory deadlift
+                    //accessory deadlift (Requirement 2.2.3)
                     waveC_grid[2, 2].Value = "Chin Up: 4 sets of 10-12 reps\n" + "Bent Over Dumbbell Row: 4 sets of 15 reps each arm\n" + "Back Raises: 4 sets of 15 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveC_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Barbell Upright Row: 4 sets of 10 reps\n" + "Dumbbell Lateral Raises: 4 sets of 10-15 reps\n" + "Standing Barbell Curl: 4 sets of 10 reps\n";
                     break;
                 //Option B
                 case 1:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveC_grid[2, 0].Value = "Leg Press: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //acessory bench
+                    //acessory bench (Requirement 2.2.2)
                     waveC_grid[2, 1].Value = "Incline Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Lying Barbell Tricep Extensions: 4 sets of 10-20 reps";
-                    //acesssory deadlift
+                    //acesssory deadlift (Requirement 2.2.3)
                     waveC_grid[2, 2].Value = "Lat Pull Down: 4 sets of 10-12 reps\n" + "Bent Over Barbell Row: 4 sets of 10 reps\n" + " Reverse Hyperextensions: 4 sets of 12 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps\n";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveC_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Rope Upright Rows: 4 sets of 10 reps\n" + "Bent Over Dumbbell Reverse Fly: 4 sets of 10-15 reps\n" + "Behind-the-Neck Overhead Press: 4 sets of 10 reps\n";
                     break;
 
@@ -282,24 +293,24 @@ namespace WindowsFormsApplication1
             {
                 //Option A
                 case 0:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveD_grid[2, 0].Value = "Hack Squat: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //accessory bench
+                    //accessory bench (Requirement 2.2.2)
                     waveD_grid[2, 1].Value = "Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Cable Tricep Extension: 4 sets of 10-20 reps";
-                    //accessory deadlift
+                    //accessory deadlift (Requirement 2.2.3)
                     waveD_grid[2, 2].Value = "Chin Up: 4 sets of 10-12 reps\n" + "Bent Over Dumbbell Row: 4 sets of 15 reps each arm\n" + "Back Raises: 4 sets of 15 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveD_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Barbell Upright Row: 4 sets of 10 reps\n" + "Dumbbell Lateral Raises: 4 sets of 10-15 reps\n" + "Standing Barbell Curl: 4 sets of 10 reps\n";
                     break;
                 //Option B
                 case 1:
-                    //accessory squat
+                    //accessory squat (Requirement 2.2.1)
                     waveD_grid[2, 0].Value = "Leg Press: 4 sets of 10-20 reps\n" + "Leg Extension: 4 sets of 10-30 reps\n" + "Leg Curl: 4 sets of 10-15 reps\n" + "Weighted Sit Up: 4 sets of 10 reps";
-                    //acessory bench
+                    //acessory bench (Requirement 2.2.2)
                     waveD_grid[2, 1].Value = "Incline Dumbbell Bench Press: 4 sets of 10-20 reps\n" + "Weighted Dip: 4 sets of 8-15 reps\n" + "Dumbbell Flyes: 4 sets of 12 reps\n" + "Lying Barbell Tricep Extensions: 4 sets of 10-20 reps";
-                    //acesssory deadlift
+                    //acesssory deadlift (Requirement 2.2.3)
                     waveD_grid[2, 2].Value = "Lat Pull Down: 4 sets of 10-12 reps\n" + "Bent Over Barbell Row: 4 sets of 10 reps\n" + " Reverse Hyperextensions: 4 sets of 12 reps\n" + "Hanging Leg Raises: 4 sets of 15 reps\n";
-                    //accessory overhead
+                    //accessory overhead (Requirement 2.2.4)
                     waveD_grid[2, 3].Value = "Seated Dumbbell Press: 4 sets of 10 reps\n" + "Rope Upright Rows: 4 sets of 10 reps\n" + "Bent Over Dumbbell Reverse Fly: 4 sets of 10-15 reps\n" + "Behind-the-Neck Overhead Press: 4 sets of 10 reps\n";
                     break;
 
