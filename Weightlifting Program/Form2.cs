@@ -21,6 +21,11 @@ namespace WindowsFormsApplication1
         static int deadlift_rm;
         static int overhead_rm;
 
+        String squatExercise = "Squat";
+        String benchExercise = "Bench Press";
+        String deadliftExercise = "Deadlift";
+        String overheadExercise = "Overhead Press";
+
         public Form2()
         {
             /**
@@ -32,6 +37,7 @@ namespace WindowsFormsApplication1
             this.waveB_grid.Rows.Add(3);
             this.waveC_grid.Rows.Add(3);
             this.waveD_grid.Rows.Add(3);
+
         }
 
         public void weights_entered(int squat, int bench, int deadlift, int overhead)
@@ -41,6 +47,19 @@ namespace WindowsFormsApplication1
             bench_rm = bench;
             deadlift_rm = deadlift;
             overhead_rm = overhead;
+        }
+
+        /**
+         * Substituion exercise names output based on user selection
+         * (Requirement 1.2.1)
+         */
+        public void substitution_exercises(String squatSubstitution, String benchSubstitution, String deadliftSubstitution, String overheadSubstitution)
+        {
+            //Store user selected exercises
+            squatExercise = squatSubstitution;
+            benchExercise = benchSubstitution;
+            deadliftExercise = deadliftSubstitution;
+            overheadExercise = overheadSubstitution;
         }
 
         public void populate_grid()
@@ -65,10 +84,10 @@ namespace WindowsFormsApplication1
         private void populate_wave_A(int option)
         {
             //Initialize first column with day numbers and exercise
-            waveA_grid[0, 0].Value = "Day 1: Squat";
-            waveA_grid[0, 1].Value = "Day 2: Bench Press";
-            waveA_grid[0, 2].Value = "Day 3: Deadlift";
-            waveA_grid[0, 3].Value = "Day 4: Overhead Press";
+            waveA_grid[0, 0].Value = "Day 1: " + squatExercise;
+            waveA_grid[0, 1].Value = "Day 2: " + benchExercise;
+            waveA_grid[0, 2].Value = "Day 3: " + deadliftExercise;
+            waveA_grid[0, 3].Value = "Day 4: " + overheadExercise;
 
             //Array to store 3 weights, one for each set
             int[] weight = new int[3];
@@ -131,10 +150,10 @@ namespace WindowsFormsApplication1
 
         private void populate_wave_B(int option)
         {
-            waveB_grid[0, 0].Value = "Day 1: Squat";
-            waveB_grid[0, 1].Value = "Day 2: Bench Press";
-            waveB_grid[0, 2].Value = "Day 3: Deadlift";
-            waveB_grid[0, 3].Value = "Day 4: Overhead Press";
+            waveB_grid[0, 0].Value = "Day 1: " + squatExercise;
+            waveB_grid[0, 1].Value = "Day 2: " + benchExercise;
+            waveB_grid[0, 2].Value = "Day 3: " + deadliftExercise;
+            waveB_grid[0, 3].Value = "Day 4: " + overheadExercise;
 
             //Array to store 3 weights, one for each set
             int[] weight = new int[3];
@@ -193,10 +212,10 @@ namespace WindowsFormsApplication1
 
         private void populate_wave_C(int option)
         {
-            waveC_grid[0, 0].Value = "Day 1: Squat";
-            waveC_grid[0, 1].Value = "Day 2: Bench Press";
-            waveC_grid[0, 2].Value = "Day 3: Deadlift";
-            waveC_grid[0, 3].Value = "Day 4: Overhead Press";
+            waveC_grid[0, 0].Value = "Day 1: " + squatExercise;
+            waveC_grid[0, 1].Value = "Day 2: " + benchExercise;
+            waveC_grid[0, 2].Value = "Day 3: " + deadliftExercise;
+            waveC_grid[0, 3].Value = "Day 4: " + overheadExercise;
 
             //Array to store 3 weights, one for each set
             int[] weight = new int[3];
@@ -257,10 +276,10 @@ namespace WindowsFormsApplication1
 
         private void populate_wave_D(int option)
         {
-            waveD_grid[0, 0].Value = "Day 1: Squat";
-            waveD_grid[0, 1].Value = "Day 2: Bench Press";
-            waveD_grid[0, 2].Value = "Day 3: Deadlift";
-            waveD_grid[0, 3].Value = "Day 4: Overhead Press";
+            waveD_grid[0, 0].Value = "Day 1: " + squatExercise;
+            waveD_grid[0, 1].Value = "Day 2: " + benchExercise;
+            waveD_grid[0, 2].Value = "Day 3: " + deadliftExercise;
+            waveD_grid[0, 3].Value = "Day 4: " + overheadExercise;
 
             //Array to store 3 weights, one for each set
             int[] weight = new int[3];
