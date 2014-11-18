@@ -22,30 +22,151 @@ namespace WindowsFormsApplication1
             this.Close();
         }
 
-        private void viewVideo(object sender, EventArgs e)      //drop down menu for tutorial videos
+        private void viewSquatVideo(object sender, EventArgs e)      //drop down menu for tutorial videos
         {
-            int selection = comboBox1.SelectedIndex + 1;
+            int squatSelection = squatDayBox.SelectedIndex + 1;
 
-            switch (selection)
+            switch (squatSelection)
             {
                 case 1:
                     backSquat squatVid = new backSquat();
                     squatVid.Show();
                     break;
                 case 2:
+                    hackSquat hackVid = new hackSquat();
+                    hackVid.Show();
+                    break;
+                case 3:
+                    legExtension extenVid = new legExtension();
+                    extenVid.Show();
+                    break;
+                case 4:
+                    legCurl curlVid = new legCurl();
+                    curlVid.Show();
+                    break;
+                case 5:
+                    sitUp sitUpVid = new sitUp();
+                    sitUpVid.Show();
+                    break;
+              
+            }    
+        }
+
+        private void viewBenchVideo(object sender, EventArgs e)
+        {
+            int benchSelection = benchDayBox.SelectedIndex + 1;
+
+            switch (benchSelection)
+            {
+                case 1:
                     benchPress benchVid = new benchPress();
                     benchVid.Show();
                     break;
+                case 2:
+                    barExtend barExtendVid = new barExtend();
+                    barExtendVid.Show();
+                    break;
                 case 3:
-                    deadlift deadliftVid = new deadlift();
-                    deadliftVid.Show();
+                    triExtend extendVid = new triExtend();
+                    extendVid.Show();                
                     break;
                 case 4:
-                    overheadPress opVid = new overheadPress();
-                    opVid.Show();
+                    dbFlyes flyesVid = new dbFlyes();
+                    flyesVid.Show();
+                    break;
+                case 5:
+                    dbBench dbBenchVid = new dbBench();
+                    dbBenchVid.Show();
+                    break;
+                case 6:     
+                    inclineDb inclineVid = new inclineDb();
+                    inclineVid.Show();
+                    break;                  
+                case 7:
+                    dip dipVid = new dip();
+                    dipVid.Show();
                     break;
             }    
         }
+
+        private void viewDLVideo(object sender, EventArgs e)
+        {
+            int dlSelection = dlDayBox.SelectedIndex + 1;
+
+            switch (dlSelection)
+            {
+                case 1:
+                    deadlift dlVid = new deadlift();
+                    dlVid.Show();
+                    break;
+                case 2:
+                    backRaise backRaiseVid = new backRaise();
+                    backRaiseVid.Show();
+                    break;
+                case 3:
+                    barbellRow barbellRowVid = new barbellRow();
+                    barbellRowVid.Show();
+                    break;
+                case 4:
+                    dbRow dbRowVid = new dbRow();
+                    dbRowVid.Show();
+                    break;
+                case 5:
+                    chinUp chinUpVid = new chinUp();
+                    chinUpVid.Show();
+                    break;
+                case 6:
+                    legRaise legRaiseVid = new legRaise();
+                    legRaiseVid.Show();
+                    break;
+                case 7:
+                    latPullDown latPullDownVid = new latPullDown();
+                    latPullDownVid.Show();
+                    break;
+                case 8:
+                    reverseHyper hyperVid = new reverseHyper();
+                    hyperVid.Show();
+                    break;
+            }
+        }
+
+        private void viewOhVideo(object sender, EventArgs e)
+        {
+            int oHSelection = overHeadBox.SelectedIndex + 1;
+
+            switch(oHSelection)
+            {
+                case 1:
+                    overheadPress ohVideo = new overheadPress();
+                    ohVideo.Show();
+                    break;
+                case 2:
+                    upRightRow upRowVideo = new upRightRow();
+                    upRowVideo.Show();
+                    break;
+                case 3: 
+                    neckPress neckPressVideo = new neckPress();
+                    neckPressVideo.Show();
+                    break;
+                case 4: 
+                    reverseFly reverseFlyVideo = new reverseFly();
+                    reverseFlyVideo.Show();
+                    break;
+                case 5:
+                    lateralRaise lateralRaiseVideo = new lateralRaise();
+                    lateralRaiseVideo.Show();
+                    break;
+                case 6:
+                    ropeRows ropeRowsVideo = new ropeRows();
+                    ropeRowsVideo.Show();
+                    break;
+                case 7:
+                    seatedPress seatedPressVideo = new seatedPress();
+                    seatedPressVideo.Show();
+                    break;
+            }
+        }
+
 
    }
 }

@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public deadlift()
         {
             InitializeComponent();
+            dlWebBrowser.Navigate("http://www.youtube.com/watch?v=u6UgD1H_AXw");
         }
     }
 }

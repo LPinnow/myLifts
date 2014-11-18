@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public benchPress()
         {
             InitializeComponent();
+            benchWebBrowser.Navigate("https://www.youtube.com/watch?v=GIqcXj2pAPA");
         }
     }
 }

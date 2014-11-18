@@ -11,6 +11,31 @@
     <AssemblyName>Weightlifting Program</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+<<<<<<< HEAD
+    <PublishUrl>C:\Users\Dan\Desktop\broFlex2\</PublishUrl>
+=======
+    <PublishUrl>C:\Users\main\Desktop\CSC\CSC 478 - SE\Group Project\</PublishUrl>
+>>>>>>> origin/master
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+<<<<<<< HEAD
+    <ApplicationRevision>2</ApplicationRevision>
+=======
+    <AutorunEnabled>true</AutorunEnabled>
+    <ApplicationRevision>1</ApplicationRevision>
+>>>>>>> origin/master
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +56,22 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+<<<<<<< HEAD
+    <ManifestCertificateThumbprint>7637C2388B9F2E26E5E2266659649855C7D60421</ManifestCertificateThumbprint>
+=======
+    <ManifestCertificateThumbprint>B08947581B099CC35B324810AB35F321B365B20E</ManifestCertificateThumbprint>
+>>>>>>> origin/master
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Weightlifting Program_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,6 +85,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="backRaise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="backRaise.Designer.cs">
+      <DependentUpon>backRaise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barbellRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="barbellRow.Designer.cs">
+      <DependentUpon>barbellRow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="barExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="barExtend.Designer.cs">
+      <DependentUpon>barExtend.cs</DependentUpon>
+    </Compile>
     <Compile Include="benchPress.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -51,11 +110,41 @@
       <DependentUpon>benchPress.cs</DependentUpon>
     </Compile>
     <Compile Include="Calculate_Weights.cs" />
+    <Compile Include="chinUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chinUp.Designer.cs">
+      <DependentUpon>chinUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbBench.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbBench.Designer.cs">
+      <DependentUpon>dbBench.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbFlyes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbFlyes.Designer.cs">
+      <DependentUpon>dbFlyes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dbRow.Designer.cs">
+      <DependentUpon>dbRow.cs</DependentUpon>
+    </Compile>
     <Compile Include="deadlift.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="deadlift.Designer.cs">
       <DependentUpon>deadlift.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="dip.Designer.cs">
+      <DependentUpon>dip.cs</DependentUpon>
     </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -69,11 +158,59 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="hackSquat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hackSquat.Designer.cs">
+      <DependentUpon>hackSquat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inclineDb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="inclineDb.Designer.cs">
+      <DependentUpon>inclineDb.cs</DependentUpon>
+    </Compile>
     <Compile Include="instructForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="instructForm.Designer.cs">
       <DependentUpon>instructForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="lateralRaise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="lateralRaise.Designer.cs">
+      <DependentUpon>lateralRaise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="latPullDown.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="latPullDown.Designer.cs">
+      <DependentUpon>latPullDown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="legCurl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legCurl.Designer.cs">
+      <DependentUpon>legCurl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="legExtension.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legExtension.Designer.cs">
+      <DependentUpon>legExtension.cs</DependentUpon>
+    </Compile>
+    <Compile Include="legRaise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="legRaise.Designer.cs">
+      <DependentUpon>legRaise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="neckPress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="neckPress.Designer.cs">
+      <DependentUpon>neckPress.cs</DependentUpon>
     </Compile>
     <Compile Include="overheadPress.cs">
       <SubType>Form</SubType>
@@ -89,11 +226,77 @@
     <Compile Include="backSquat.Designer.cs">
       <DependentUpon>backSquat.cs</DependentUpon>
     </Compile>
+    <Compile Include="reverseFly.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reverseFly.Designer.cs">
+      <DependentUpon>reverseFly.cs</DependentUpon>
+    </Compile>
+    <Compile Include="reverseHyper.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reverseHyper.Designer.cs">
+      <DependentUpon>reverseHyper.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ropeRows.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ropeRows.Designer.cs">
+      <DependentUpon>ropeRows.cs</DependentUpon>
+    </Compile>
+    <Compile Include="seatedPress.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="seatedPress.Designer.cs">
+      <DependentUpon>seatedPress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sitUp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sitUp.Designer.cs">
+      <DependentUpon>sitUp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="triExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="triExtend.Designer.cs">
+      <DependentUpon>triExtend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upRightRow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upRightRow.Designer.cs">
+      <DependentUpon>upRightRow.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="backRaise.resx">
+      <DependentUpon>backRaise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barbellRow.resx">
+      <DependentUpon>barbellRow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="barExtend.resx">
+      <DependentUpon>barExtend.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="benchPress.resx">
       <DependentUpon>benchPress.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="chinUp.resx">
+      <DependentUpon>chinUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbBench.resx">
+      <DependentUpon>dbBench.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbFlyes.resx">
+      <DependentUpon>dbFlyes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dbRow.resx">
+      <DependentUpon>dbRow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="deadlift.resx">
       <DependentUpon>deadlift.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="dip.resx">
+      <DependentUpon>dip.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -101,8 +304,32 @@
     <EmbeddedResource Include="Form2.resx">
       <DependentUpon>Form2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="hackSquat.resx">
+      <DependentUpon>hackSquat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inclineDb.resx">
+      <DependentUpon>inclineDb.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="instructForm.resx">
       <DependentUpon>instructForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="lateralRaise.resx">
+      <DependentUpon>lateralRaise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="latPullDown.resx">
+      <DependentUpon>latPullDown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="legCurl.resx">
+      <DependentUpon>legCurl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="legExtension.resx">
+      <DependentUpon>legExtension.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="legRaise.resx">
+      <DependentUpon>legRaise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="neckPress.resx">
+      <DependentUpon>neckPress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="overheadPress.resx">
       <DependentUpon>overheadPress.cs</DependentUpon>
@@ -120,6 +347,27 @@
     <EmbeddedResource Include="backSquat.resx">
       <DependentUpon>backSquat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="reverseFly.resx">
+      <DependentUpon>reverseFly.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reverseHyper.resx">
+      <DependentUpon>reverseHyper.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ropeRows.resx">
+      <DependentUpon>ropeRows.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="seatedPress.resx">
+      <DependentUpon>seatedPress.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sitUp.resx">
+      <DependentUpon>sitUp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="triExtend.resx">
+      <DependentUpon>triExtend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upRightRow.resx">
+      <DependentUpon>upRightRow.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -129,6 +377,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="Weightlifting Program_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -146,6 +395,14 @@
     <None Include="Resources\squat2.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <COMReference Include="AxSHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
     <COMReference Include="AxShockwaveFlashObjects">
       <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
       <VersionMajor>1</VersionMajor>
@@ -153,6 +410,34 @@
       <Lcid>0</Lcid>
       <WrapperTool>aximp</WrapperTool>
       <Isolated>False</Isolated>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </COMReference>
+<<<<<<< HEAD
+    <COMReference Include="SHDocVw">
+      <Guid>{EAB22AC0-30C1-11CF-A7EB-0000C05BAE0B}</Guid>
+=======
+    <COMReference Include="DIRECTORSHOCKWAVELib">
+      <Guid>{AC4C21AD-9194-416E-9D34-D6C1350F28F6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="FlashAccessibility">
+      <Guid>{57A0E746-3863-4D20-A811-950C84F1DB9B}</Guid>
+>>>>>>> origin/master
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>1</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+<<<<<<< HEAD
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+=======
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+>>>>>>> origin/master
     </COMReference>
     <COMReference Include="ShockwaveFlashObjects">
       <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
@@ -161,9 +446,32 @@
       <Lcid>0</Lcid>
       <WrapperTool>tlbimp</WrapperTool>
       <Isolated>False</Isolated>
-      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
     </COMReference>
   </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+<<<<<<< HEAD
+=======
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+>>>>>>> origin/master
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

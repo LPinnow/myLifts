@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public overheadPress()
         {
             InitializeComponent();
+            overheadWebBrowser.Navigate("http://www.youtube.com/watch?v=SAXPJ3PfdyY");
         }
     }
 }

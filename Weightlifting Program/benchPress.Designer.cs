@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(benchPress));
-            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
+            this.benchWebBrowser = new AxSHDocVw.AxWebBrowser();
+            ((System.ComponentModel.ISupportInitialize)(this.benchWebBrowser)).BeginInit();
             this.SuspendLayout();
             // 
-            // axShockwaveFlash1
+            // benchWebBrowser
             // 
-            this.axShockwaveFlash1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axShockwaveFlash1.Enabled = true;
-            this.axShockwaveFlash1.Location = new System.Drawing.Point(0, 0);
-            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
-            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(518, 349);
-            this.axShockwaveFlash1.TabIndex = 0;
+            this.benchWebBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.benchWebBrowser.Enabled = true;
+            this.benchWebBrowser.Location = new System.Drawing.Point(0, 0);
+            this.benchWebBrowser.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("benchWebBrowser.OcxState")));
+            this.benchWebBrowser.Size = new System.Drawing.Size(661, 465);
+            this.benchWebBrowser.TabIndex = 0;
             // 
             // benchPress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(518, 349);
-            this.Controls.Add(this.axShockwaveFlash1);
+            this.ClientSize = new System.Drawing.Size(661, 465);
+            this.Controls.Add(this.benchWebBrowser);
             this.Name = "benchPress";
-            this.Text = "benchPress";
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
+            this.Text = "Bench Press";
+            ((System.ComponentModel.ISupportInitialize)(this.benchWebBrowser)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
+        private AxSHDocVw.AxWebBrowser benchWebBrowser;
+       
     }
 }

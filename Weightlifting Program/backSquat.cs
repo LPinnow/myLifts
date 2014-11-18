@@ -15,6 +15,7 @@ namespace WindowsFormsApplication1
         public backSquat()
         {
             InitializeComponent();
+            squatWebBrowser.Navigate("http://www.youtube.com/watch?v=zoZWgTrZLd8");
         }
     }
 }

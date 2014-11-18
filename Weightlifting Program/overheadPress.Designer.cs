@@ -29,35 +29,35 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(overheadPress));
-            this.axShockwaveFlash1 = new AxShockwaveFlashObjects.AxShockwaveFlash();
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).BeginInit();
+            this.overheadWebBrowser = new AxSHDocVw.AxWebBrowser();
+            ((System.ComponentModel.ISupportInitialize)(this.overheadWebBrowser)).BeginInit();
             this.SuspendLayout();
             // 
-            // axShockwaveFlash1
+            // overheadWebBrowser
             // 
-            this.axShockwaveFlash1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.axShockwaveFlash1.Enabled = true;
-            this.axShockwaveFlash1.Location = new System.Drawing.Point(0, 0);
-            this.axShockwaveFlash1.Name = "axShockwaveFlash1";
-            this.axShockwaveFlash1.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("axShockwaveFlash1.OcxState")));
-            this.axShockwaveFlash1.Size = new System.Drawing.Size(502, 310);
-            this.axShockwaveFlash1.TabIndex = 0;
+            this.overheadWebBrowser.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.overheadWebBrowser.Enabled = true;
+            this.overheadWebBrowser.Location = new System.Drawing.Point(0, 0);
+            this.overheadWebBrowser.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("overheadWebBrowser.OcxState")));
+            this.overheadWebBrowser.Size = new System.Drawing.Size(661, 465);
+            this.overheadWebBrowser.TabIndex = 0;
             // 
             // overheadPress
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(502, 310);
-            this.Controls.Add(this.axShockwaveFlash1);
+            this.ClientSize = new System.Drawing.Size(661, 465);
+            this.Controls.Add(this.overheadWebBrowser);
             this.Name = "overheadPress";
-            this.Text = "overheadPress";
-            ((System.ComponentModel.ISupportInitialize)(this.axShockwaveFlash1)).EndInit();
+            this.Text = "Overhead Press";
+            ((System.ComponentModel.ISupportInitialize)(this.overheadWebBrowser)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private AxShockwaveFlashObjects.AxShockwaveFlash axShockwaveFlash1;
+        private AxSHDocVw.AxWebBrowser overheadWebBrowser;
+
     }
 }

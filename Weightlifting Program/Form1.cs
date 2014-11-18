@@ -24,6 +24,11 @@ namespace WindowsFormsApplication1
         public Form1()
         {
             InitializeComponent();
+
+            squatComboBox.SelectedIndex = 0;
+            benchComboBox.SelectedIndex = 0;
+            deadliftComboBox.SelectedIndex = 0;
+            overheadComboBox.SelectedIndex = 0;
         }
 
         /**
@@ -54,12 +59,18 @@ namespace WindowsFormsApplication1
                 bench = Convert.ToInt16(bench_input.Text);
                 overhead = Convert.ToInt16(overhead_input.Text);
 
+                String squatSub = this.squatComboBox.Items[this.squatComboBox.SelectedIndex].ToString();
+                String benchSub = this.benchComboBox.Items[this.benchComboBox.SelectedIndex].ToString();
+                String deadliftSub = this.deadliftComboBox.Items[this.deadliftComboBox.SelectedIndex].ToString();
+                String overheadSub = this.overheadComboBox.Items[this.overheadComboBox.SelectedIndex].ToString();
+
                 /**
                  * Create and call the results form
                  * (Requirement 1.1.1)
                  */
                 Form2 results = new Form2();
                 results.weights_entered(squat, bench, deadlift, overhead);
+                results.substitution_exercises(squatSub, benchSub, deadliftSub, overheadSub);
                 results.populate_grid();
                 results.Show();
             }
@@ -79,6 +90,9 @@ namespace WindowsFormsApplication1
             instructForm instruct = new instructForm();
             instruct.Show();
         }
+
+        
+
 
     }
 
