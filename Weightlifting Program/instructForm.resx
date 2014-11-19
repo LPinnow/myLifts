@@ -119,10 +119,12 @@
   </resheader>
   <data name="label1.Text" xml:space="preserve">
     <value>Please establish a 1 rep max for each of the following movements before using the program:
-     - Squat
+     - Squat                                
      - Bench Press
      - Deadlift
      - Overhead Press
+
+Please choose a substitution exercise from the drop-down box if unable to perform a movement. 
 
 Enter your 1 rep max for each movement into the corresponding text field. Click on the "Calculate"
 button and a 4 week work out plan will be generated!

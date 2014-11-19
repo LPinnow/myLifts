@@ -17,12 +17,12 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void backClick(object sender, EventArgs e)      //close this form, return to main form
+        private void backClick(object sender, EventArgs e)      //back button: close this form, return to main form
         {
             this.Close();
         }
 
-        private void viewSquatVideo(object sender, EventArgs e)      //drop down menu for tutorial videos
+        private void viewSquatVideo(object sender, EventArgs e)      //drop down menu for Squat Day tutorial videos
         {
             int squatSelection = squatDayBox.SelectedIndex + 1;
 
@@ -52,7 +52,7 @@ namespace WindowsFormsApplication1
             }    
         }
 
-        private void viewBenchVideo(object sender, EventArgs e)
+        private void viewBenchVideo(object sender, EventArgs e)         //drop down menu for Bench Day tutorial videos
         {
             int benchSelection = benchDayBox.SelectedIndex + 1;
 
@@ -89,7 +89,7 @@ namespace WindowsFormsApplication1
             }    
         }
 
-        private void viewDLVideo(object sender, EventArgs e)
+        private void viewDLVideo(object sender, EventArgs e)            //drop down menu for DL Day tutorial videos
         {
             int dlSelection = dlDayBox.SelectedIndex + 1;
 
@@ -130,7 +130,7 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void viewOhVideo(object sender, EventArgs e)
+        private void viewOhVideo(object sender, EventArgs e)            //drop down menu for OH Press Day tutorial videos
         {
             int oHSelection = overHeadBox.SelectedIndex + 1;
 
