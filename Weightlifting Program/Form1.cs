@@ -74,7 +74,7 @@ namespace WindowsFormsApplication1
                 results.populate_grid();
                 results.Show();
             }
-            catch (FormatException fEx)
+            catch (FormatException)
             {
                 MessageBox.Show("Please Enter Only Digits (0-9)");
             }
