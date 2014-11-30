@@ -337,7 +337,13 @@ namespace WindowsFormsApplication1
             }
         }
 
-        
-            
+
+        private void printClick(object sender, EventArgs e)
+        {
+            printForm.PrinterSettings.DefaultPageSettings.Landscape = true;
+            printForm.Print(Form.ActiveForm, Microsoft.VisualBasic.PowerPacks.Printing.PrintForm.PrintOption.CompatibleModeClientAreaOnly);
+        }
+
+                    
     }
 }
