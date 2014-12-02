@@ -55,6 +55,7 @@
             this.SuspendLayout();
             // 
             // calculate
+            // Calculate button (Requirement 1.1.0)
             // 
             this.calculate.Location = new System.Drawing.Point(256, 352);
             this.calculate.Name = "calculate";
@@ -65,6 +66,7 @@
             this.calculate.Click += new System.EventHandler(this.calculate_Click);
             // 
             // overhead_input
+            // Textbox allowing a max length of 4 digits (Requirement 1.5.0 & 1.5.1)
             // 
             this.overhead_input.Location = new System.Drawing.Point(270, 279);
             this.overhead_input.MaxLength = 4;
@@ -74,6 +76,7 @@
             this.overhead_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // deadlift_input
+            // Textbox allowing a max length of 4 digits (Requirement 1.5.0 & 1.5.1)
             // 
             this.deadlift_input.Location = new System.Drawing.Point(270, 228);
             this.deadlift_input.MaxLength = 4;
@@ -83,6 +86,7 @@
             this.deadlift_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // bench_input
+            // Textbox allowing a max length of 4 digits (Requirement 1.5.0 & 1.5.1)
             // 
             this.bench_input.Location = new System.Drawing.Point(270, 177);
             this.bench_input.MaxLength = 4;
@@ -92,6 +96,7 @@
             this.bench_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // squat_input
+            // Textbox allowing a max length of 4 digits (Requirement 1.5.0 & 1.5.1)
             // 
             this.squat_input.Location = new System.Drawing.Point(270, 124);
             this.squat_input.MaxLength = 4;
@@ -101,6 +106,7 @@
             this.squat_input.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.textbox_KeyPress);
             // 
             // label1
+            // 1RM label (Requirement 1.5.3)
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -111,6 +117,7 @@
             this.label1.Text = "1 RM:";
             // 
             // label2
+            // 1RM label (Requirement 1.5.3)
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -121,6 +128,7 @@
             this.label2.Text = "1 RM:";
             // 
             // label3
+            // 1RM label (Requirement 1.5.3)
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -131,6 +139,7 @@
             this.label3.Text = "1 RM:";
             // 
             // label4
+            // 1RM label (Requirement 1.5.3)
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -141,6 +150,7 @@
             this.label4.Text = "1 RM:";
             // 
             // instructions
+            // Instructions button (Requirement 1.3.0)
             // 
             this.instructions.Location = new System.Drawing.Point(130, 352);
             this.instructions.Name = "instructions";
@@ -195,6 +205,7 @@
             this.pictureBox1.TabStop = false;
             // 
             // squatComboBox
+            // (Requirement 1.2.1.1)
             // 
             this.squatComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.squatComboBox.FormattingEnabled = true;
@@ -208,6 +219,7 @@
             this.squatComboBox.TabIndex = 14;
             // 
             // benchComboBox
+            // (Requirement 1.2.1.2)
             // 
             this.benchComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.benchComboBox.FormattingEnabled = true;
@@ -222,6 +234,7 @@
             this.benchComboBox.TabIndex = 15;
             // 
             // deadliftComboBox
+            // (Requirement 1.2.1.3)
             // 
             this.deadliftComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.deadliftComboBox.FormattingEnabled = true;
@@ -236,6 +249,7 @@
             this.deadliftComboBox.TabIndex = 16;
             // 
             // overheadComboBox
+            // (Requirement 1.2.1.4)
             // 
             this.overheadComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.overheadComboBox.FormattingEnabled = true;
@@ -260,6 +274,9 @@
             this.label5.Text = "myLifts";
             // 
             // Form1
+            // Title at top of form (Requirement 1.4.0)
+            // Diagram next to input textboxes (Requirement 1.6.0)
+            // Four textboxes for input (Requirement 1.5.0)
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -297,6 +314,8 @@
 
         #endregion
 
+        
+        
         private System.Windows.Forms.Button calculate;
         private System.Windows.Forms.TextBox overhead_input;
         private System.Windows.Forms.TextBox deadlift_input;

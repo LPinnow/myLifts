@@ -68,6 +68,7 @@
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // instructBack
+            // Back button (Requirement 4.1.1)
             // 
             this.instructBack.Location = new System.Drawing.Point(399, 12);
             this.instructBack.Name = "instructBack";
@@ -78,6 +79,7 @@
             this.instructBack.Click += new System.EventHandler(this.backClick);
             // 
             // squatDayBox
+            // Squat drop down menu (Requirement 4.2.1.1)
             // 
             this.squatDayBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.squatDayBox.FormattingEnabled = true;
@@ -93,6 +95,7 @@
             this.squatDayBox.TabIndex = 3;
             // 
             // button1
+            // OK button (Requirement 4.2.2)
             // 
             this.button1.Location = new System.Drawing.Point(154, 345);
             this.button1.Name = "button1";
@@ -113,6 +116,7 @@
             this.label3.Text = "Tutorial Videos";
             // 
             // benchDayBox
+            // Bench Press drop down menu (Requirement 4.2.1.2)
             // 
             this.benchDayBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.benchDayBox.FormattingEnabled = true;
@@ -130,6 +134,7 @@
             this.benchDayBox.TabIndex = 6;
             // 
             // button2
+            // OK button (Requirement 4.2.2)
             // 
             this.button2.Location = new System.Drawing.Point(399, 345);
             this.button2.Name = "button2";
@@ -160,6 +165,7 @@
             this.label5.Text = "Bench Day";
             // 
             // dlDayBox
+            // Deadlift drop down menu (Requirement 4.2.1.3)
             // 
             this.dlDayBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.dlDayBox.FormattingEnabled = true;
@@ -178,6 +184,7 @@
             this.dlDayBox.TabIndex = 10;
             // 
             // button3
+            // OK button (Requirement 4.2.2)
             // 
             this.button3.Location = new System.Drawing.Point(154, 402);
             this.button3.Name = "button3";
@@ -198,6 +205,7 @@
             this.label6.Text = "Deadlift Day";
             // 
             // overHeadBox
+            // Overhead Press drop down menu (Requirement 4.2.1.4)
             // 
             this.overHeadBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.overHeadBox.FormattingEnabled = true;
@@ -215,6 +223,7 @@
             this.overHeadBox.TabIndex = 13;
             // 
             // button4
+            // OK button (Requirement 4.2.2)
             // 
             this.button4.Location = new System.Drawing.Point(399, 402);
             this.button4.Name = "button4";
@@ -235,6 +244,7 @@
             this.label7.Text = "OH Press Day";
             // 
             // instructForm
+            // Instructions form (Requirement 4.0.0)
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;

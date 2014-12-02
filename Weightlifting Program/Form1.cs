@@ -25,6 +25,8 @@ namespace WindowsFormsApplication1
         {
             InitializeComponent();
 
+            // Default values of exercise drop down menu set to four main exercises
+            // (Requirement 1.2.0 & 1.2.1)
             squatComboBox.SelectedIndex = 0;
             benchComboBox.SelectedIndex = 0;
             deadliftComboBox.SelectedIndex = 0;
@@ -33,7 +35,7 @@ namespace WindowsFormsApplication1
 
         /**
          * Display error message if input is not a number
-         * (Requirement 1.1.3)
+         * (Requirement 1.5.2)
          */
         private void textbox_KeyPress(object sender, KeyPressEventArgs e)
         {
@@ -65,8 +67,8 @@ namespace WindowsFormsApplication1
                 String overheadSub = this.overheadComboBox.Items[this.overheadComboBox.SelectedIndex].ToString();
 
                 /**
-                 * Create and call the results form
-                 * (Requirement 1.1.1)
+                 * Create and call the output form
+                 * (Requirement 1.1.1 & 1.1.2)
                  */
                 Form2 results = new Form2();
                 results.weights_entered(squat, bench, deadlift, overhead);
@@ -74,6 +76,8 @@ namespace WindowsFormsApplication1
                 results.populate_grid();
                 results.Show();
             }
+            // Validate input in the textboxes
+            // (Requirement 1.1.3)
             catch (FormatException)
             {
                 MessageBox.Show("Please Enter Only Digits (0-9)");

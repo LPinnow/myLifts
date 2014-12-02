@@ -10,6 +10,11 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
+    /*
+     * Instructions Form
+     * Displays instructional information and tutorial videos
+     * (Requirement 4.0.0 & 4.1.0)
+     */
     public partial class instructForm : Form
     {
         public instructForm()
@@ -17,12 +22,14 @@ namespace WindowsFormsApplication1
             InitializeComponent();
         }
 
-        private void backClick(object sender, EventArgs e)      //back button: close this form, return to main form
+        // Back Button (Requirement 4.1.1)
+        private void backClick(object sender, EventArgs e)      
         {
             this.Close();
         }
 
-        private void viewSquatVideo(object sender, EventArgs e)      //drop down menu for Squat Day tutorial videos
+        // Squat drop down menu (Requirement 4.2.1 & 4.2.1.1)
+        private void viewSquatVideo(object sender, EventArgs e)      
         {
             int squatSelection = squatDayBox.SelectedIndex + 1;
 
@@ -52,7 +59,8 @@ namespace WindowsFormsApplication1
             }    
         }
 
-        private void viewBenchVideo(object sender, EventArgs e)         //drop down menu for Bench Day tutorial videos
+        // Bench Press drop down menu (Requirement 4.2.1 & 4.2.1.2)
+        private void viewBenchVideo(object sender, EventArgs e)         
         {
             int benchSelection = benchDayBox.SelectedIndex + 1;
 
@@ -89,7 +97,8 @@ namespace WindowsFormsApplication1
             }    
         }
 
-        private void viewDLVideo(object sender, EventArgs e)            //drop down menu for DL Day tutorial videos
+        // Deadlift drop down menu (Requirement 4.2.1 & 4.2.1.3)
+        private void viewDLVideo(object sender, EventArgs e)           
         {
             int dlSelection = dlDayBox.SelectedIndex + 1;
 
@@ -130,7 +139,8 @@ namespace WindowsFormsApplication1
             }
         }
 
-        private void viewOhVideo(object sender, EventArgs e)            //drop down menu for OH Press Day tutorial videos
+        // Overhead Press drop down menu (Requirement 4.2.1 & 4.2.1.4)
+        private void viewOhVideo(object sender, EventArgs e)            
         {
             int oHSelection = overHeadBox.SelectedIndex + 1;
 

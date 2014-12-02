@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace WindowsFormsApplication1
 {
+    // All calculations used are obtained from Jim Wendler's 5/3/1 Power Lifting Routine
+    // (Requirement 2.0.0)
     class calculate
     {
         /**
@@ -18,11 +20,11 @@ namespace WindowsFormsApplication1
             int[] wave_A = new int[3];
             int set1, set2, set3;
       
+            // Weight calculated is 90% of true max weight (Requirement 2.1.0)
+            weight = (int) Math.Round(weight * .90);
 
-            weight = (int) Math.Round(weight * .90); //calculating max is 90% of true max
-
-     
-            set1 = (int)Math.Ceiling((weight * .75) / 5) * 5;   //rounding up to nearest integer divisible by 5 to reflect weights used in the gym
+            // Weights rounded up to the nearest integer divisible by 5 (Requirement 2.2.0)
+            set1 = (int)Math.Ceiling((weight * .75) / 5) * 5;   
             wave_A[0] = set1;
             set2 = (int)Math.Ceiling((weight * .80) / 5) * 5;
             wave_A[1] = set2;
@@ -42,10 +44,11 @@ namespace WindowsFormsApplication1
             int[] wave_B = new int[3];
             int set1, set2, set3;
 
-            weight = (int)Math.Round(weight * .90); //calculating max is 90% of true max
+            // Weight calculated is 90% of true max weight (Requirement 2.1.0)
+            weight = (int)Math.Round(weight * .90);
 
-
-            set1 = (int)Math.Ceiling((weight * .80) / 5) * 5;   //rounding up to nearest integer divisible by 5 to reflect weights used in the gym
+            // Weights rounded up to the nearest integer divisible by 5 (Requirement 2.2.0)
+            set1 = (int)Math.Ceiling((weight * .80) / 5) * 5;   
             wave_B[0] = set1;
             set2 = (int)Math.Ceiling((weight * .85) / 5) * 5;
             wave_B[1] = set2;
@@ -65,10 +68,11 @@ namespace WindowsFormsApplication1
             int[] wave_C = new int[3];
             int set1, set2, set3;
 
-            weight = (int)Math.Round(weight * .90); //calculating max is 90% of true max
+            // Weight calculated is 90% of true max weight (Requirement 2.1.0)
+            weight = (int)Math.Round(weight * .90);
 
-
-            set1 = (int)Math.Ceiling((weight * .75) / 5) * 5;   //rounding up to nearest integer divisible by 5 to reflect weights used in the gym
+            // Weights rounded up to the nearest integer divisible by 5 (Requirement 2.2.0)
+            set1 = (int)Math.Ceiling((weight * .75) / 5) * 5;   
             wave_C[0] = set1;
             set2 = (int)Math.Ceiling((weight * .85) / 5) * 5;
             wave_C[1] = set2;
@@ -88,10 +92,11 @@ namespace WindowsFormsApplication1
             int[] wave_D = new int[3];
             int set1, set2, set3;
 
-            weight = (int)Math.Round(weight * .90); //calculating max is 90% of true max
+            // Weight calculated is 90% of true max weight (Requirement 2.1.0)
+            weight = (int)Math.Round(weight * .90);
 
-
-            set1 = (int)Math.Ceiling((weight * .60) / 5) * 5;   //rounding up to nearest integer divisible by 5 to reflect weights used in the gym
+            // Weights rounded up to the nearest integer divisible by 5 (Requirement 2.2.0)
+            set1 = (int)Math.Ceiling((weight * .60) / 5) * 5;  
             wave_D[0] = set1;
             set2 = (int)Math.Ceiling((weight * .65) / 5) * 5;
             wave_D[1] = set2;
